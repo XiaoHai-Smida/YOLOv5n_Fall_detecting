@@ -3,9 +3,9 @@ import json
 from requests_toolbelt import MultipartEncoder
 
 class qywx:
-    corpid = 'ww4d5ca4993ed36e82'  # 步骤1-3中的企业id
+    corpid = 'xxx2'  # 步骤1-3中的企业id
     app_list = [
-        (1000002, '_S-_oMLKF6auRuXSOKZn6fJLih-jFfXlUor7eBhfZQU')
+        (1000002, 'xxxxxx')
         # 此处将步骤1-2中的AgentId 和 Secret分别填入，多个应用逗号隔开
     ]
 
@@ -107,5 +107,5 @@ text = '连接成功'
 #if __name__ == '__main__':
 qy = qywx(0)
 # 发送文本消息
-qy.send_text(text, ['WangRong|KongBaiGeEr|AiChiCangShuDeLeShi'])
-#ifttt.send_text('notice_phone','cQQXADMCV4oOv1Q9R12FnH',text)
+qy.send_text(text, ['user1|user2|user3'])
+#ifttt.send_text('notice_phone','key',text)
